@@ -1,0 +1,20 @@
+body.ukraine {
+  padding-top: 22px;
+}
+
+body.ukraine::after {
+  background-color: #fff;
+  background: #ffd700;
+  color: #000;
+  content: "🇺🇦 Слава Україні! Slava Ukraini! Glory to Ukraine!";
+  position: absolute;
+  height: 22px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  font-size: 16px;
+  line-height: 16px;
+  justify-content: center;
+  align-items: center;
+}

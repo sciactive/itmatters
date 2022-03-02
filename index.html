@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>It Matters</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="ukraine" style="background-color: #eee; color: #333">
+    <div style="margin-top: 1em">
+      <button
+        onclick="(() => {
+        if (document.body.classList.contains('ukraine')) {
+          document.body.classList.remove('ukraine');
+        } else {
+          document.body.classList.add('ukraine');
+        }
+      })()"
+      >
+        Toggle Ukraine Message
+      </button>
+    </div>
+  </body>
+</html>
