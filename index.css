@@ -1,12 +1,14 @@
-body.ukraine {
+body.ukraine, body.transrights {
   padding-top: 22px;
 }
 
-body.ukraine::after {
+body.ukraine.transrights {
+  padding-top: 44px;
+}
+
+body.ukraine::after, body.transrights::before {
   background-color: #fff;
-  background: #ffd700;
   color: #000;
-  content: "🇺🇦 Слава Україні! Glory to Ukraine!";
   position: absolute;
   height: 22px;
   width: 100%;
@@ -17,4 +19,18 @@ body.ukraine::after {
   line-height: 16px;
   justify-content: center;
   align-items: center;
+}
+
+body.ukraine.transrights::after {
+  top: 22px;
+}
+
+body.ukraine::after {
+  background: #ffeb7f;
+  content: "🇺🇦 Слава Україні! Glory to Ukraine!";
+}
+
+body.transrights::before {
+  background: #a9e3f9;
+  content: "🏳️‍⚧️ Trans Rights are Human Rights!";
 }

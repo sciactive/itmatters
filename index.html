@@ -4,7 +4,7 @@
     <title>It Matters</title>
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body class="ukraine" style="background-color: #eee; color: #333">
+  <body class="ukraine transrights" style="background-color: #eee; color: #333">
     <div style="margin-top: 1em">
       <button
         onclick="(() => {
@@ -16,6 +16,17 @@
       })()"
       >
         Toggle Ukraine Message
+      </button>
+      <button
+        onclick="(() => {
+        if (document.body.classList.contains('transrights')) {
+          document.body.classList.remove('transrights');
+        } else {
+          document.body.classList.add('transrights');
+        }
+      })()"
+      >
+        Toggle Trans Rights Message
       </button>
     </div>
   </body>
